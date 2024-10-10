@@ -1,35 +1,70 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import { useState } from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
+const CadastroEstilizado = () => {
+  const [nome, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+  const [confirmarSenha, setConfirmarSenha] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (senha !== confirmarSenha) {
+      alert("As senhas não coincidem!");
+      return;
+    }
+    console.log({ nome, email, senha });
+  };
 
   return (
-    <>
+    <div className="App">
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <h1></h1>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="main">
+        <div className="center">
+          <div className="menu">
+            <form onSubmit={handleSubmit}>
+              <div className="item_menu">
+                <input 
+                  type="text" 
+                  placeholder="Nome Completo" 
+                  value={nome} 
+                  onChange={(e) => setNome(e.target.value)} 
+                  required 
+                />
+                <input 
+                  type="email" 
+                  placeholder="Email" 
+                  value={email} 
+                  onChange={(e) => setEmail(e.target.value)} 
+                  required 
+                />
+                <input 
+                  type="password" 
+                  placeholder="Senha" 
+                  value={senha} 
+                  onChange={(e) => setSenha(e.target.value)} 
+                  required 
+                />
+                <input 
+                  type="password" 
+                  placeholder="Confirmar Senha" 
+                  value={confirmarSenha} 
+                  onChange={(e) => setConfirmarSenha(e.target.value)} 
+                  required 
+                />
+                <button type="submit">Registrar</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <footer>
+        <p>© 2024</p>
+      </footer>
+    </div>
+  );
+};
 
-export default App
+export default CadastroEstilizado;
