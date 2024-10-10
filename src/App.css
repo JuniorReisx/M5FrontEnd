@@ -1,16 +1,23 @@
 body{
   font-family: 'Arial', sans-serif;
-  background-color: #0b0b46;
+  background: linear-gradient(to right, #1c98ed, #000);
   margin: 0;
   padding: 0;
+  justify-content: center;
 }
 
-app{
+.forms {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgb(2, 15, 85);
+  background-color: white;
 }
 
 h1 {
@@ -40,8 +47,21 @@ menu {
   width: 100%;
 }
 
-item_menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
+.submit{
+  background-color: #1c98ed;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.item_menu{
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s; 
 }

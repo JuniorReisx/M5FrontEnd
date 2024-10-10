@@ -1,5 +1,7 @@
 import './App.css';
 import { useState } from 'react';
+import Header from '../src/components/Header/Header';
+import Footer from './components/Footer/footer';
 
 const CadastroEstilizado = () => {
   const [nome, setNome] = useState('');
@@ -18,10 +20,8 @@ const CadastroEstilizado = () => {
 
   return (
     <div className="App">
-      <div>
-      <h1></h1>
-      </div>
-      <div className="main">
+      <Header />
+      <div className="main forms">
         <div className="center">
           <div className="menu">
             <form onSubmit={handleSubmit}>
@@ -54,15 +54,13 @@ const CadastroEstilizado = () => {
                   onChange={(e) => setConfirmarSenha(e.target.value)} 
                   required 
                 />
-                <button type="submit">Registrar</button>
+                <button className='submit' type="submit">Registrar</button>
               </div>
             </form>
           </div>
         </div>
       </div>
-      <footer>
-        <p>© 2024</p>
-      </footer>
+      <Footer />
     </div>
   );
 };
