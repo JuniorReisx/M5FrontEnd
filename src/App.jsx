@@ -1,68 +1,24 @@
-import './App.css';
-import { useState } from 'react';
-import Header from '../src/components/Header/Header';
-import Footer from './components/Footer/footer';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from './Header';
+import Footer from './Footer';
+import LoginForm from './LoginForm';
+import RegisterForm from './RegisterForm';
+import About from './About';
+import JobCards from './JobCards';
 
-const CadastroEstilizado = () => {
-  const [nome, setNome] = useState('');
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
-  const [confirmarSenha, setConfirmarSenha] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (senha !== confirmarSenha) {
-      alert("As senhas não coincidem!");
-      return;
-    }
-    console.log({ nome, email, senha });
-  };
-
+function App() {
   return (
-    <div className="App">
+    <Router>
       <Header />
-      <div className="main forms">
-        <div className="center">
-          <div className="menu">
-            <form onSubmit={handleSubmit}>
-              <div className="item_menu">
-                <input 
-                  type="text" 
-                  placeholder="Nome Completo" 
-                  value={nome} 
-                  onChange={(e) => setNome(e.target.value)} 
-                  required 
-                />
-                <input 
-                  type="email" 
-                  placeholder="Email" 
-                  value={email} 
-                  onChange={(e) => setEmail(e.target.value)} 
-                  required 
-                />
-                <input 
-                  type="password" 
-                  placeholder="Senha" 
-                  value={senha} 
-                  onChange={(e) => setSenha(e.target.value)} 
-                  required 
-                />
-                <input 
-                  type="password" 
-                  placeholder="Confirmar Senha" 
-                  value={confirmarSenha} 
-                  onChange={(e) => setConfirmarSenha(e.target.value)} 
-                  required 
-                />
-                <button className='submit' type="submit">Registrar</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+        <Route path="/register" element={<RegisterForm />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/vagas" element={<JobCards />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
-};
+}
 
 export default App;

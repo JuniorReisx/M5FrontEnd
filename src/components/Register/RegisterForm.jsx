@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
 const RegisterForm = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleRegister = (e) => {
     e.preventDefault();
     if (password === confirmPassword) {
-      console.log('Registro', { email, password });
+      console.log("Registro", { email, password });
     } else {
-      console.error('As senhas não coincidem');
+      console.error("As senhas não coincidem");
     }
   };
 

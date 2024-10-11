@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
 const LoginForm = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Lógica para autenticar o usuário
-    console.log('Login', { email, password });
+    console.log("Login", { email, password });
   };
 
   return (
@@ -31,7 +30,7 @@ const LoginForm = () => {
         <button type="submit">Entrar</button>
       </form>
       <p>
-        Não tem uma conta? <a href="/register">Cadastre-se</a>
+        Ainda não tem uma conta? <a href="/register">Cadastre-se</a>
       </p>
     </div>
   );
