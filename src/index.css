@@ -15,7 +15,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* scroll */
+
 *::-webkit-scrollbar {
     width: 6px;
 }
@@ -28,9 +28,7 @@ html {
     background-color: #597cff;
     border-radius: 8px;
 }
-/* scroll */
 
-/* Navbar */
 .navbar {
     padding: 0px 0px;
     display: flex;
@@ -100,7 +98,6 @@ html {
     opacity: 1;
     width: 100%;
 }
-/* Fim Navbar */
 
 .content {
     position: absolute;
@@ -143,7 +140,6 @@ html {
     width: 400px;
 }
 
-/* Botão */
 .bn54 {
     top: 50px;
     position: relative;
@@ -216,8 +212,6 @@ a:link {
     }
 }
 
-/* Resto do site */
-/* Inicio sobre */
 .about {
     background-color: #FFF3E3;
     position: absolute;
@@ -257,8 +251,7 @@ a:link {
     top: 7%;
     pointer-events: none;
 }
-/* Fim sobre */
-/* Inicio */
+
 .novelties {
     background-color: #597cff;
     position: absolute;
@@ -267,7 +260,6 @@ a:link {
     height: 110%;
 }
 
-/* Inicio dos cards */
 .container {
     width: 80%;
     min-height: 100vh;
@@ -434,7 +426,3 @@ a:link {
     font-size: 70px;
     color: #010f34;
 }
-
-/* Final dos cards */
-
-/* fim do novidades */
