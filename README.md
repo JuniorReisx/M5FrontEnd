@@ -36,7 +36,7 @@ npm install
 ```
 ### 4. Run the FrontEnd
 ```
-npm start
+npm run dev
 ```
 ## Contribution 
 
