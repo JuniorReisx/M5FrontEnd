@@ -49,8 +49,8 @@ const Home = () => {
           <h1>Sobre nós</h1>
           <img src="/remember.png" alt="Sobre nós" className="remenber" />
           <p>
-            A nossa plataforma de empregabilidade e carreira tem o objetivo de
-            ampliar o acesso de talentos negros no Brasil a oportunidades na
+            A nossa plataforma de empregabilidade<br /> e carreira tem o objetivo de
+            ampliar o<br /> acesso de talentos negros no Brasil a oportunidades na
             área de tecnologia.
           </p>
         </div>
