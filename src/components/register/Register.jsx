@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import './Register.css';
 
 const Register = () => {
@@ -14,16 +15,24 @@ const Register = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    //logica
-    console.log(formData);
+    try {
+      const response = await axios.post('https://m5backend-322f.onrender.com/users', {
+        nome: formData.username,
+        email: formData.email,
+        password: formData.password
+      });
+      console.log('Cadastro realizado com sucesso:', response.data);
+    } catch (error) {
+      console.error('Erro ao cadastrar usuário:', error);
+    }
   };
 
   return (
     <div className="register-container">
       <form className="register-form" onSubmit={handleSubmit}>
-        <h2>Register</h2>
+        <h2>Registrar</h2>
         <div className="form-group">
           <label htmlFor="username">Nome completo</label>
           <input
