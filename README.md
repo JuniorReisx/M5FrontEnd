@@ -9,6 +9,8 @@ Diversity should not only be a moral priority, but also a business strategy. It 
 
 In this context, TechNBlack emerges, the final project from the Programadores do Amanhã training program. It is an website designed to manage tech job opportunities specifically for black individuals. The platform was developed as an inclusive solution, facilitating access to job opportunities and promoting greater diversity in the tech sector.
 
+![image](https://github.com/user-attachments/assets/3b499996-c795-444f-9883-2c61901fc8af)
+
 ## Technologies Used
 
 * Node.js
