@@ -86,4 +86,10 @@
     justify-content: center;
     margin: 20px 0;
   }
+
+  .loading-message {
+    color: white; 
+    text-align: center; 
+    margin-top: 20px;
+  }
   

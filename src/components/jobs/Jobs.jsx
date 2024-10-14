@@ -47,7 +47,7 @@ const Jobs = ({ isRecruiter }) => {
           </div>
         ))
       ) : (
-        <p>Carregando vagas...</p>
+        <p className="loading-message">Carregando vagas...</p>
       )}
     </div>
   );
