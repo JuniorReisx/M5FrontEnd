@@ -22,7 +22,9 @@ const Login = () => {
   };
 
   return (
-    <div className="container-login">
+    <main>
+
+  <div className="container-login">
       <form onSubmit={handleSubmit}>
         <h1>Acesse o sistema</h1>
         <div className="input-field">
@@ -45,7 +47,9 @@ const Login = () => {
           />
           <FaLock className="icon" />
         </div>
-        <button type="submit">Login</button>
+        <div className="container-button">
+        <button className="btn-login" type="submit">Login</button>
+        </div>
         <div className="signup-link">
           <p>
             Não tem uma conta? <Link to="/register">Cadastre-se</Link>
@@ -53,6 +57,8 @@ const Login = () => {
         </div>
       </form>
     </div>
+    </main>
+    
   );
 };
 
