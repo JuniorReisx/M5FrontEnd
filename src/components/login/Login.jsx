@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
-import "/login.css";
+import './Login.css';
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -12,7 +12,7 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container-login">
       <form onSubmit={handleSubmit}>
         <h1>Acesse o sistema</h1>
         <div className="input-field">

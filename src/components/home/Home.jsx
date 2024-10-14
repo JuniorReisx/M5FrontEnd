@@ -19,10 +19,10 @@ const Home = () => {
               <a href="#novelties">Detalhes</a>
             </li>
             <li>
-              <a href="#">Vagas</a>
+              <a href="/jobs">Vagas</a>
             </li>
             <li>
-              <a href="#">Login</a>
+              <a href="/login">Login</a>
             </li>
           </ul>
         </div>
@@ -50,7 +50,7 @@ const Home = () => {
           <img src="/remember.png" alt="Sobre nós" className="remenber" />
           <p>
             A nossa plataforma de empregabilidade<br /> e carreira tem o objetivo de
-            ampliar o<br /> acesso de talentos negros no Brasil a oportunidades na
+            ampliar o <br />acesso de talentos negros no Brasil a <br />oportunidades na
             área de tecnologia.
           </p>
         </div>
@@ -71,7 +71,7 @@ const Home = () => {
             <h2>Oportunidades para Todos:</h2>
             <hr />
             <p>
-              Empresas associadas a TechNBlack investem em programas de
+              Empresas associadas à TechNBlack investem em programas de
               conscientização racial e capacitação profissional, ampliando o
               acesso de pessoas negras ao mercado de tecnologia.
             </p>
