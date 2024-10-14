@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer">
          <div className="footer-bottom">
         <p className='paragrafo'> <strong>
-        &copy; {new Date().getFullYear()} Criado com Amor
+          "Não importa a cor quando duas mãos estão juntas projetando a mesma sombra." - Martin Luther King.
           </strong></p>
       </div>
     </footer>

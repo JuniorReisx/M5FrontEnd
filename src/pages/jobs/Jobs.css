@@ -11,6 +11,7 @@
 .container-grid {
   display: grid;
   grid-template-columns: auto auto auto;
+  margin-left: 50px;
 }
 .jobs-container {
   display: flex;

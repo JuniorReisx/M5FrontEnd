@@ -42,26 +42,26 @@ const Home = () => {
             <h2>Diversidade e Inclusão:</h2>
             <hr />
             <p>
-              A TechnBlack une empresas para acelerar a diversidade, equidade e
-              inclusão, incentivando lideranças e talentos negros.
+            A TechnBlack une empresas para <br/>acelerar a diversidade, equidade e
+            <br />inclusão, incentivando lideranças e <br />talentos negros.
             </p>
           </div>
           <div className="Activities">
             <h2>Oportunidades para Todos:</h2>
             <hr />
             <p>
-              Empresas associadas à TechNBlack investem em programas de
-              conscientização racial e capacitação profissional, ampliando o
-              acesso de pessoas negras ao mercado de tecnologia.
+              Empresas apoiadoras investem em programas de
+              conscientização <br />racial e capacitação profissional,<br /> ampliando o
+              acesso de pessoas <br />negras ao mercado de tecnologia.
             </p>
           </div>
           <div className="Activities">
             <h2>Suporte para Comunicação:</h2>
             <hr />
             <p>
-              Nossa plataforma conecta talentos negros a vagas exclusivas das
-              empresas, oferecendo oportunidades reais de desenvolvimento
-              profissional e acesso ao mercado de trabalho.
+              Nossa plataforma conecta talentos negros a vagas exclusivas <br/> 
+              oferecendo oportunidades reais de desenvolvimento
+              profissional e <br />acesso ao mercado de trabalho.
             </p>
           </div>
         </div>
