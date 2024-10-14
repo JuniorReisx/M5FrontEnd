@@ -40,6 +40,13 @@ npm install
 ```
 npm run dev
 ```
+
+### The deployment
+
+You can also use the deploy
+
+
+
 ## Contribution 
 
 Contributions are welcome! Create a new branch for your changes and submit a pull request.
