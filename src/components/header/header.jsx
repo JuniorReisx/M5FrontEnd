@@ -1,4 +1,5 @@
 import "./header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -13,18 +14,19 @@ function Header() {
             </li>
             <li>
               <a href="/#about">Sobre</a>
+ 
             </li>
             <li>
               <a href="/#novelties">Detalhes</a>
             </li>
             <li>
-              <a href="/jobs">Vagas</a>
+              <Link to="/jobs">Vagas</Link>
             </li>
             <li>
-              <a href="/recruiter">Recrutador</a>
+              <Link to="/recruiter">Recrutador</Link>
             </li>
             <li>
-              <a href="/user">Usuario</a>
+              <Link to="/user">Usuário</Link>
             </li>
           </ul>
         </div>
