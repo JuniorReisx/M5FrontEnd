@@ -12,7 +12,7 @@ export default defineConfig({
         short_name: 'TechNBlack',
         description: 'Descrição do PWA',
         theme_color: '#000',
-        background_color: '#000',
+        background_color: '#ffffff',
         display: 'fullscreen',
         start_url: '/',
         icons: [
