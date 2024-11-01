@@ -3,7 +3,7 @@
   "short_name": "TechNBlack",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000",
+  "background_color": "#ffffff",
   "theme_color": "#000",
   "icons": [
     {
