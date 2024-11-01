@@ -1,0 +1,21 @@
+{
+    "name": "TechNBlack",
+    "short_name": "TechNBlack",
+    "start_url": "/", 
+    "display": "fullscreen", 
+    "background_color": "#000",
+    "theme_color": "#000",
+    "icons": [
+      {
+        "src": "iconct.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "iconct.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
