@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
       <nav className="navbar">
-        <img className="logo" src="./iconct.png" alt="logo" />
+        <img className="logo" src="./icon.png" alt="logo" />
         <div className="navbar-links">
           <div className="dot" style={{ left: "26.225px" }}></div>
           <ul>
